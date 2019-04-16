@@ -1,0 +1,5 @@
+CONFIGURAÇÕES INICIAIS
+    - As configurações básicas do projeto estão na pasta "config";
+    - Chave de criptografia está no arquivo ".env";
+
+    
