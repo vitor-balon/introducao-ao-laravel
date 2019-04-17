@@ -48,6 +48,10 @@ Route::post('/formulario', function ()
 });
 
 // Rota que redireciona para um controller
+// 1° Parametro - URL da rota;
+// 2° Parametro - NomeDoController@MetodoDoController
 Route::get('/contatocontroller', ['uses' => 'ContatoController@index']);
 Route::get('/formulariocontroller', ['uses' => 'ContatoController@formulariocontroller']);
 Route::post('/formulariopostcontroller', ['uses' => 'ContatoController@formulariopostcontroller']);
+Route::get('/main', ['uses' => 'ContatoController@main']);
+Route::get('/listarcontatos', ['uses' => 'ContatoController@listarcontatos']);

@@ -1,6 +1,9 @@
 CONFIGURAÇÕES INICIAIS
     - As configurações básicas do projeto estão na pasta "config";
     - Chave de criptografia está no arquivo ".env";
+    - Para mudar o tipo de conecção basta alterar o nome do drive no arquivo ".env" no atributo "DB_CONNECTION";
+    - No arquivo "config/datatbase.php" se encontram os drivers para uso;
+    - O tributo "'default' => env('DB_CONNECTION', 'mysql')," é responsável por usar as configurações para o banco, por padrão ele irá utilizar o primeiro parametro informado "DB_CONNECTION" que é referente ao atributo do arquivo ".env" caso ele não encontro esse atributo no arquivo irá usar o segundo parametro informado, que é referente ao driver do próprio arquivo "database";
 
 ESTRUTURA DO FRAMEWORK
     - A estrutura principal do projeto fica na pasta "app";
@@ -12,4 +15,7 @@ PASTA "Database"
     - Seeds: ;
 
 CONSOLE "artisan"
-    - Para visualizar uma lista de todos os comandos executar comando "php artisan"    
+    - Para visualizar uma lista de todos os comandos executar comando "php artisan"
+
+MODELS
+    -     
