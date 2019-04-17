@@ -2,4 +2,14 @@ CONFIGURAÇÕES INICIAIS
     - As configurações básicas do projeto estão na pasta "config";
     - Chave de criptografia está no arquivo ".env";
 
-    
+ESTRUTURA DO FRAMEWORK
+    - A estrutura principal do projeto fica na pasta "app";
+    - Na raiz da pasta "app" ficam todos os models da aplicação;
+
+PASTA "Database"
+    - Factories: Servem basicamente para gerar valores aleatórios para a sua aplicação;
+    - Migrations: Servem para modelar o banco, criando, atualizando e exluíndo tabelas;
+    - Seeds: ;
+
+CONSOLE "artisan"
+    - Para visualizar uma lista de todos os comandos executar comando "php artisan"    
