@@ -19,3 +19,10 @@ CONSOLE "artisan"
 
 MODELS
     -     
+
+ORDEM DE CRIAÇÃO PARA MODEL
+    - Model;
+    - Migração;
+    - Rota;
+    - Controller;
+    - View;

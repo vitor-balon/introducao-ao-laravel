@@ -55,3 +55,11 @@ Route::get('/formulariocontroller', ['uses' => 'ContatoController@formulariocont
 Route::post('/formulariopostcontroller', ['uses' => 'ContatoController@formulariopostcontroller']);
 Route::get('/main', ['uses' => 'ContatoController@main']);
 Route::get('/listarcontatos', ['uses' => 'ContatoController@listarcontatos']);
+
+// ROTAS DO CRUD DE CURSOS
+Route::get('/admin/cursos', ['as' => 'admin.cursos', 'uses' => 'Admin\CursoController@index']);
+Route::get('/admin/cursos/adicionar', ['as' => 'admin.cursos.adicionar', 'uses' => 'Admin\CursoController@adicionar']);
+Route::post('/admin/cursos/adicionar', ['as' => 'admin.cursos.adicionar.post', 'uses' => 'Admin\CursoController@adicionarPost']);
+Route::get('/admin/cursos/editar/{id }', ['as' => 'admin.cursos.editar', 'uses' => 'Admin\CursoController@editar']);
+Route::post('/admin/cursos/editar', ['as' => 'admin.cursos.editar.post', 'uses' => 'Admin\CursoController@editarPost']);
+Route::get('/admin/cursos/deletar/{id}', ['as' => 'admin.cursos.deletar', 'uses' => 'Admin\CursoController@deletar']);
