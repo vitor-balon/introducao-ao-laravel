@@ -27,16 +27,19 @@
                                 <td>{{ $curso['titulo'] }}</td>
                                 <td>{{ $curso['valor'] }}</td>
                                 <td>
-                                    <a href="{{ route('admin.cursos.editar') }}" class="btn btn-primary">Editar</a>
+                                    <a href="{{ route('admin.cursos.editar', $curso['id']) }}" class="btn btn-primary">Editar</a>
                                 </td>
                                 <td>
-                                    <a href="{{ route('admin.cursos.deletar') }}" class="btn btn-danger">Deletar</a>
+                                    <a href="{{ route('admin.cursos.deletar', $curso['id']) }}" class="btn btn-danger">Deletar</a>
                                 </td>
                             </tr>                            
                         @endforeach
 
                     </tbody>
-                </table>                    
+                </table>
+
+                {{ $cursos->links() }}
+
             </div>
         </div>
     </div>

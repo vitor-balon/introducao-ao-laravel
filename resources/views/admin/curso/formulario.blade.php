@@ -1,15 +1,20 @@
 {{ csrf_field() }}
+
+@if (isset($curso['id']))
+    <input type="hidden" name="id" value="{{ $curso['id'] }}">    
+@endif
+
 <div class="form-group">
     <label for="titulo">Título</label>
-    <input type="text" class="form-control" id="titulo" name="titulo" value="{{ isset($curso['titulo']) }}">
+    <input type="text" class="form-control" id="titulo" name="titulo" value="{{ isset($curso['titulo']) ? $curso['titulo'] : null }}">
 </div>
 <div class="form-group">
     <label for="descricao">Descrição</label>
-    <textarea name="descricao" id="descricao" rows="5" class="form-control">{{ isset($curso['descricao']) }}</textarea>
+    <textarea name="descricao" id="descricao" rows="5" class="form-control">{{ isset($curso['descricao']) ? $curso['titulo'] : null }}</textarea>
 </div>
 <div class="form-group">
     <label for="valor">Valor</label>
-    <input type="text" class="form-control" id="valor" name="valor" value="{{ isset($curso['valor']) }}">
+    <input type="number" class="form-control" id="valor" name="valor" value="{{ isset($curso['valor']) ? $curso['valor'] : null }}">
 </div>
 <div class="form-group">
     <label for="publicado">Publicado</label>

@@ -15,14 +15,17 @@ PASTA "Database"
     - Seeds: ;
 
 CONSOLE "artisan"
-    - Para visualizar uma lista de todos os comandos executar comando "php artisan"
+    - Para visualizar uma lista de todos os comandos executar comando "php artisan";
 
 MODELS
-    -     
+    - Quando for manipular os registros em massa, devem ser informados os fillables no model conforme no exemplo no Model User;
 
-ORDEM DE CRIAÇÃO PARA MODEL
+ORDEM DE CRIAÇÃO PARA CRUD
     - Model;
     - Migração;
     - Rota;
     - Controller;
     - View;
+
+SEEDER
+    - Serve para popular a base para testes;
